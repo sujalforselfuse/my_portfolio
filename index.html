@@ -13,19 +13,16 @@
     <style>
         body {
 
-            background-color: #141414;
+            background-color: hsl(242, 19%, 5%);
+            max-width: 88%;
 
 
         }
 
-        #nav_bar {
-            position: absolute;
-            left: -10px;
+        
 
-            top: 0px;
-            background-color: black;
-            width: 84px;
-            height: 100%;
+        #home_page {
+            background-color: hsl(242, 14%, 10%);
         }
 
         section {
@@ -78,7 +75,7 @@
 
         #more_about_me {
             position: absolute;
-            background-color: #F50B93;
+            background-color: hsl(342, 92%, 46%);
             color: white;
             height: 50px;
             width: 190px;
@@ -121,10 +118,10 @@
             color: white;
 
             width: 100%;
-            height: 500px;
+            height: 740px;
         }
 
-        @media only screen and (max-width:152px) {
+        @media only screen and (max-width:376px) {
             brief_me {
                 position: absolute;
                 color: white;
@@ -142,9 +139,9 @@
             #name {
                 position: relative;
                 color: white;
-                left: 80px;
-                top: 145px;
-                font-size: 64px;
+                left: -44px;
+                top: 135px;
+                font-size: 54px;
             }
 
             #more_about_me {
@@ -152,21 +149,96 @@
                 left: -45px;
             }
         }
+
+        #heading_at_about {
+            position: relative;
+            text-align: center;
+            font-size: 50px;
+
+        }
+
+        #profile {
+            position: relative;
+            left: 91px;
+            top: 125px;
+
+        }
+
+        #intro {
+            position: absolute;
+            left: 532px;
+            width: auto;
+            top: 144px;
+            margin: 32px;
+
+        }
+
+        #name2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #options {
+            display: flex;
+            gap: 67px;
+            
+        }
+
+        .option1 {
+            position: relative;
+            background-color: hsl(242, 14%, 10%);
+            border-radius: 10px;
+            width: 200px;
+            height: 161px;
+            color: white;
+            left: 566px;
+            top: -75px;
+
+        }
+
+        .icons2 {
+            height: 50px;
+            width: 192px;
+        }
+
+        .name_to_box {
+            text-align: center;
+            font-weight: 800;
+        }
+        #descri{
+            position: relative;
+            top: 17px;
+        }
+
+        .descr2 {
+            text-align: center;
+            position: relative;
+            top: 13px;
+        }
+
+        #btn1 {
+            position: relative;
+            background-color: #F50B93;
+            color: white;
+            border: solid 1px white;
+            left: 569px;
+            width: 200px;
+            height: 46px;
+            padding: 14px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 20px;
+        }
     </style>
 </head>
 
 <body>
 
-    <navigation id="nav_bar">
-        sujal
-    </navigation>
+    
 
-
-
-
-    <section>
+    <section id="home_page">
         <ul>
-            <li>FOLLOW ME :</li>
+            <li>FOLLOW ME :(WEBSITE IS CONTINOUSLY DEVELOPING)</li>
             <li><img src="ig-removebg-preview.png" class="social_media_icon" alt="" srcset=""></li>
             <li><img src="linkedin-removebg-preview.png" class="social_media_icon" alt="" srcset=""></li>
         </ul>
@@ -196,12 +268,29 @@
         </short_contact>
     </section>
 
-
-
-
-
     <section id="about_me">
-
+        <div id="heading_at_about">About Me</div>
+        <div id="profile"><img src="profile.jpeg" alt="" srcset=""></div>
+        <div id="intro"><span id="name2">Hi I am Sujal Based In Indore</span><br> <span id="descri">Computer Science
+                Engineer pursuing from mits gwalior.I am having proficiency in C/C++.I have solved over 100+ competitive
+                problems on various competitive platforms including HACKERRANK and LEETCODE</span> </div>
+        <div id="options">
+            <div class="option1"><img class="icons2" src="award.svg" alt="" srcset="">
+                <div class="name_to_box">Experience</div>
+                <div class="descr2">1+ Year On C++<br>2+ Month On Frontend</div>
+            </div>
+            <div class="option1"><img class="icons2" src="check-circle.svg" alt="" srcset="">
+                <div class="name_to_box">Completed</div>
+                <div class="descr2">1+ Project</div>
+            </div>
+            <div class="option1"><img class="icons2" src="envelope.svg" alt="" srcset="">
+                <div class="name_to_box">Support</div>
+                <div class="descr2">Available 24/7</div>
+            </div>
+        </div>
+        <div>
+            <button id="btn1">CONTACT ME</button>
+        </div>
     </section>
 
 
